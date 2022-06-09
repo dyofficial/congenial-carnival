@@ -231,7 +231,7 @@ li {
 .content_sitebar li {
   color: #ffc000;
   font-family: "Calibri Light";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 }
 ::-webkit-scrollbar {
@@ -252,7 +252,7 @@ li {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #ffc001;
 }
 /* .home-content {
   display: flex;
