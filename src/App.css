@@ -258,7 +258,7 @@ li {
   display: flex;
 } */
 .content_main {
-  padding-right: 50px;
+  /* padding-right: 50px; */
   margin-left: -20px;
 }
 .main__title {
