@@ -14,12 +14,10 @@ const Login = ({ setRegister, handleLogin, register }) => {
         <div className="left">
           <div className="input-area">
             <span>Email:</span>
-            <br />
             <input type="text" placeholder="Email or login" />
           </div>
           <div className="input-area">
             <span>Email</span>
-            <br />
             <input type="text" placeholder="Email or login" />
           </div>
           <button className="login-btn" type="submit">
@@ -29,12 +27,10 @@ const Login = ({ setRegister, handleLogin, register }) => {
         <div className="right">
           <div className="input-area">
             <span>Password:</span>
-            <br />
-            <input type="password" placeholder="password" />
+            <input type="password" placeholder="Password" />
           </div>
           <div className="input-area">
             <span>Catcha</span>
-            <br />
             <input type="text" placeholder="Captcha" />
           </div>
           <Link to="/signup">

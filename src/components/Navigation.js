@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { IoIosHome } from "react-icons/io";
-import { FaShoppingCart } from "react-icons/fa";
+import { IoIosHome, IoMdArrowDropdown } from "react-icons/io";
+import { FaShoppingCart, FaGlobeAmericas } from "react-icons/fa";
+import { BsFillMegaphoneFill } from "react-icons/bs";
 import "../App.css";
 
 const Navigation = ({ register }) => {
@@ -48,8 +49,15 @@ const Navigation = ({ register }) => {
             <div className="profile-links">
               <ul>
                 <li>Balance: 0$</li>
-                <li className="menu">Menu</li>
-                <FaShoppingCart color="white" />
+                <li className="menu">
+                  Menu
+                  <IoMdArrowDropdown />
+                </li>
+                <div className="icons">
+                  <FaShoppingCart color="white" size="20px" />
+                  <BsFillMegaphoneFill color="white" size="20px" />
+                  <FaGlobeAmericas color="white" size="20px" />
+                </div>
               </ul>
             </div>
           ) : (

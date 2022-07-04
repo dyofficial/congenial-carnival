@@ -4,6 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  caret-color: white;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 50px #2a313a inset;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #2a313a inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #999;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: #2a313a, 0 0 0 50px #2a313a inset;
+  -webkit-text-fill-color: #999;
 }
 .App {
   background-color: #2a313a;
@@ -95,14 +108,15 @@
   display: flex;
 }
 .input-area {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   display: flex;
   flex-direction: column;
   padding: 20px;
   color: #7e8795;
   margin: 20px 10px 10px 10px;
-  background-color: #3d444d;
+  background-color: #2a313a;
   border-radius: 5px;
+  font-size: 14px;
 }
 .left {
   display: flex;
@@ -169,10 +183,14 @@ li {
 }
 .profile-links {
   display: flex;
-  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
 }
 .profile-links ul {
   display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile-links ul li {
   font-size: 12px;
@@ -182,11 +200,14 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+
 .menu {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 0 10px;
   color: #fff;
-  font: 14px CalibriBold;
+  font: 16px CalibriBold;
+  text-transform: uppercase;
   background-image: linear-gradient(
     to top,
     #313741,
@@ -289,4 +310,33 @@ li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+input[type="text"],
+input[type="password"] {
+  height: 30px;
+  background-color: #2a313a;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: none;
+  background-color: #2a313a;
+  outline: none;
+}
+input[type="text"]:active,
+input[type="password"]:active {
+  border: none;
+  outline: none;
+}
+.icons {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+input {
+  color: white;
 }
