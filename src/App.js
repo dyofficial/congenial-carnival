@@ -12,7 +12,7 @@ function App() {
   const [pageTitle, setPageTitle] = useState("Home");
 
   const titleMap = [
-    { path: "/", title: "crd2.life" },
+    { path: "/", title: "crd6.life" },
     { path: "/home", title: "FAQs" },
     { path: "/signup", title: "Sign Up" },
   ];
